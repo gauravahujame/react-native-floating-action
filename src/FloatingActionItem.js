@@ -68,14 +68,14 @@ class FloatingActionItem extends Component {
           style={[
             styles.textContainer,
             styles[`${position}TextContainer`],
-            {
-              backgroundColor: textBackground,
-              elevation: textElevation || elevation,
-              shadowOffset: {
-                height: textElevation || elevation
-              }
-            },
-            shadow,
+            // {
+            //   backgroundColor: textBackground,
+            //   elevation: textElevation || elevation,
+            //   shadowOffset: {
+            //     height: textElevation || elevation
+            //   }
+            // },
+            // shadow,
             textContainerStyle
           ]}
         >
@@ -120,7 +120,7 @@ class FloatingActionItem extends Component {
     return (
       <View
         key="button"
-        style={[styles.button, propStyles, shadow]}
+        style={[styles.button, propStyles]}
       >
         {React.isValidElement(icon) ? (
           icon

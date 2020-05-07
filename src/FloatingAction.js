@@ -655,7 +655,8 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     elevation: 0,
-    zIndex: 0
+    zIndex: 0,
+    height: Dimensions.get('window').height,
   },
   buttonContainer: {
     overflow: Platform.OS === "ios" ? "visible" : "hidden",
