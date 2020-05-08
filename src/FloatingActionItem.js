@@ -282,9 +282,9 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     paddingHorizontal: 8,
-    elevation: 5,
+    // elevation: 5,
     borderRadius: 4,
-    height: 22
+    // height: 22
   },
   leftTextContainer: {
     marginLeft: 14
@@ -294,12 +294,12 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    lineHeight: 20
+    // lineHeight: 20
   },
   button: {
     alignItems: "center",
     justifyContent: "center",
-    elevation: 5
+    // elevation: 5
   },
   iconLogo: {
     resizeMode: "cover",
