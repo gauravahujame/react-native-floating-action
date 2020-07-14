@@ -99,7 +99,7 @@ class FloatingActionItem extends Component {
   }
 
   renderButton() {
-    const { buttonSize, icon, color, shadow, tintColor, size } = this.props;
+    const { buttonSize, icon, color, shadow, tintColor } = this.props;
 
     let iconStyle;
 
@@ -125,7 +125,7 @@ class FloatingActionItem extends Component {
         {React.isValidElement(icon) ? (
           icon
         ) : (
-          <Image style={[iconStyle, {tintColor: tintColor, height: size, width: size}]} source={icon} />
+          <Image style={[iconStyle, {tintColor: tintColor}]} source={icon} />
         )}
       </View>
     );
@@ -247,23 +247,23 @@ FloatingActionItem.propTypes = {
 };
 
 FloatingActionItem.defaultProps = {
-  tintColor: '#fff',
+  // tintColor: '#fff',
   color: "#1253bc",
   distanceToEdge: 30,
   buttonSize: 40,
-  textElevation: 5,
+  // textElevation: 5,
   textColor: "#444444",
   textBackground: "#ffffff",
   margin: 8,
-  shadow: {
-    shadowOpacity: 0.35,
-    shadowOffset: {
-      width: 0,
-      height: 5
-    },
-    shadowColor: "#000000",
-    shadowRadius: 3
-  }
+  // shadow: {
+  //   shadowOpacity: 0.35,
+  //   shadowOffset: {
+  //     width: 0,
+  //     height: 5
+  //   },
+  //   shadowColor: "#000000",
+  //   shadowRadius: 3
+  // }
 };
 
 const styles = StyleSheet.create({
@@ -284,7 +284,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 8,
     // elevation: 5,
     borderRadius: 4,
-    // height: 22
+    // height: 25,
+    // backgroundColor:'red'
   },
   leftTextContainer: {
     marginLeft: 14
@@ -294,12 +295,13 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
-    // lineHeight: 20
+    // lineHeight: 20,
+    lineHeight: 25
   },
   button: {
     alignItems: "center",
     justifyContent: "center",
-    // elevation: 5
+    elevation: 0
   },
   iconLogo: {
     resizeMode: "cover",
